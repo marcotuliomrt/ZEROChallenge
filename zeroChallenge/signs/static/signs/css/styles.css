@@ -1,11 +1,7 @@
-/* yourapp/static/yourapp/styles.css */
-
-
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    margin: 0;
     padding: 0;
+    margin-bottom:50px;
 }
 
 header {
@@ -99,4 +95,12 @@ table.data-table tr:hover {
     background-color: #333; 
 }
 
-
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
