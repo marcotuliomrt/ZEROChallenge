@@ -17,10 +17,10 @@
 
 <div class="buttons">
 
-    <form action="{% url 'solved' %}" method="post">
+    <form action="{% url 'all' %}" method="post">
         {% csrf_token %}
         <div class="container-button">
-            <button type="submit" class="pretty-button">Solved</button>
+            <button type="submit" class="pretty-button">All</button>
         </div>
     </form>
 
@@ -32,7 +32,6 @@
     </form>
 
 </div>
-
 
 <table class="data-table">
     <thead>
