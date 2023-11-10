@@ -1,0 +1,47 @@
+{% extends "signs/base.html" %}
+{% load static %}
+
+{% block content %}
+<img src="{% static 'signs/img/logo-zero.png' %}" />
+<p>Como o Post-it, mas com outro verbo</p>
+
+<form method="post">
+    {% csrf_token %}
+  <label for="titulo">Título</label>
+  <input id="titulo" type="text" name="titulo" />
+  <label for="detalhes">Detalhes</label>
+  <textarea id="detalhes" name="detalhes"></textarea>
+  <input type="submit" />
+</form>
+
+<ul>
+    {% for sign in signs %}
+    <li>{{ sign.adress }}</li>
+    {% endfor %}
+</ul>
+
+<h1>Data Grid</h1>
+<button id="toggleButton">Toggle Solved</button>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Adress</th>
+                <th>Classification</th>
+                <th>View</th>
+                <th>Solved</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sign in signs %}
+                <tr>
+                    <td>{{ sign.adress }}</td>
+                    <td>{{ sign.classification }}</td>
+                    <td>{{ sign.view }}</td>
+                    <td>{{ sign.solved }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+{% endblock %}
