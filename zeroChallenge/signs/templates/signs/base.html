@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Zero</title>
@@ -16,49 +16,16 @@
     />
     {% load static %}
     <link rel="stylesheet" href="{% static 'signs/css/styles.css' %}" />
-
-    <head>
-      <title>Full-Width Header Example</title>
-    </head>
   </head>
-
-  <div class="content">
 
   <body>
     {% block content %} {% endblock %}
   </body>
 
-  </div>
-
-
-  <br>
-  <br>
-
-<style>
-  .footer {
-    position: fixed;
-    bottom: 0;
-    background-color: black;
-    height: 35px;
-    width: 100%;
-    margin-top: 20px;
-    bottom: 0;
-  }
-
-  .footer p {
-      text-align: center;
-      padding: 8px;
-  }
-
-  .content {
-    flex: 1; /* Allow the content to take up remaining space */
-  }
-</style>
-
-<footer class="footer">
-  <p>&copy; 2023 Your Website Name</p>
-  <p>Email: contact@example.com</p>
-  <p>Phone: (123) 456-7890</p>
-</footer>
+  <footer class="footer">
+    <p class="footer-p">&copy; 2023 Zero Challenge | Insper</p>
+    <p class="footer-p">Email: contact@example.com</p>
+    <p class="footer-p">Phone: (123) 456-7890</p>
+  </footer>
 
 </html>

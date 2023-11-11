@@ -1,14 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
+/* reset do css */
+* {
+    margin: 0;
     padding: 0;
-    margin-bottom:50px;
+    box-sizing: border-box;
 }
 
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Media Queries */
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+  
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+}
+  
+/* Footer Styles */
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+}
+
+.footer-p {
+    padding: 8px;
+} 
+
+/* Header Styles */
 header {
-margin: 0;
-padding: 0;
-height: 100vh;
-background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
 }
 
 
@@ -16,6 +59,7 @@ h1 {
     color: #333;
 }
 
+/* Table Styles */
 table.data-table {
     border-collapse: collapse;
     width: 90%;
@@ -37,14 +81,14 @@ table.data-table tr:hover {
     background-color: #f5f5f5;
 }
 
-
+/* Header Styles */
 .header {
     display: flex;
     align-items: center;
     background-color: black;
     padding: 10px;
     height: 10vh;
-    margin: 0; 
+    margin: 0;
     width: 100%;
 }
 
@@ -58,6 +102,7 @@ table.data-table tr:hover {
     color: white;
 }
 
+/* Wrapper Styles */
 #wrapper {
     text-align: center;
 }
@@ -66,16 +111,17 @@ table.data-table tr:hover {
     display: inline-block;
 }
 
+/* Buttons Styles */
 .buttons {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .container-button {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     padding: 8px;
 }
 
@@ -88,19 +134,18 @@ table.data-table tr:hover {
     border: none;
     border-radius: 5px;
     display: inline-block;
-    font-size: 16px;   
+    font-size: 16px;
 }
 
 .pretty-button:hover {
-    background-color: #333; 
+    background-color: #333;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
+/* Add styles for the map title */
+.map-title {
+    margin-top: 20px; /* Adjust the top margin as needed */
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+    font-family: 'Roboto', sans-serif; /* Use a suitable font */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
 }
